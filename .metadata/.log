@@ -374,3 +374,33 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:45:10.466
 !MESSAGE executing callback sts4.classpath.ZeTPRRBM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:06.383
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:06.388
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:06.392
+!MESSAGE buffering callback sts4.classpath.ZeTPRRBM relationships false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:06.393
+!MESSAGE executing callback sts4.classpath.ZeTPRRBM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:06.400
+!MESSAGE executing callback sts4.classpath.ZeTPRRBM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:10.486
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:10.493
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:10.499
+!MESSAGE buffering callback sts4.classpath.ZeTPRRBM relationships false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:10.499
+!MESSAGE executing callback sts4.classpath.ZeTPRRBM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-13 11:47:10.506
+!MESSAGE executing callback sts4.classpath.ZeTPRRBM SUCCESS [done]
