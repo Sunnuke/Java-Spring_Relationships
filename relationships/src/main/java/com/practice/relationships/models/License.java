@@ -12,6 +12,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 @Table(name="licenses")
 public class License {
@@ -24,9 +26,13 @@ public class License {
     private String number;
     private Date expirationDate;
     private String state;
+    
     @Column(updatable=false)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date createdAt;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date updatedAt;
+    
     @OneToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="person_id")
     private Person person;
