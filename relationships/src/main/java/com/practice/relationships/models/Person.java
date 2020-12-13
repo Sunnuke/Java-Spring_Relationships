@@ -14,6 +14,8 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 @Table(name="persons")
 public class Person {
@@ -26,8 +28,12 @@ public class Person {
     private String firstName;
     private String lastName;
     @Column(updatable=false)
+    
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date createdAt;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date updatedAt;
+    
     @OneToOne(mappedBy="person", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
     private License license;
     

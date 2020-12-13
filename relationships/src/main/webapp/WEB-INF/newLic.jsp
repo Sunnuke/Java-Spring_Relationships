@@ -12,7 +12,7 @@
 <body>
 	<div class="container">
 		<div class="row align-items-start">
-			<h1>New New License</h1>
+			<h1>New License</h1>
 		</div>
 		<div class="row">
 			<div class="col">
