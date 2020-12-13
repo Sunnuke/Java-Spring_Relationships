@@ -16,11 +16,10 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<form:form action="/dashboard" method="post" modelAttribute="song">
-					<form:input path="title" placeholder="Title of Song"/><br>
-					<br><form:input path="artist" placeholder="First Name"/><br>
-					<br><form:input type="number" path="rating" placeholder="Last Name"/><br>
-					<br><br><form:button type="submit">Add Song</form:button><br>
+				<form:form action="/dashboard" method="post" modelAttribute="person">
+					<form:input path="firstName" placeholder="First Name"/><br>
+					<br><form:input path="lastName" placeholder="Last Name"/><br>
+					<br><br><form:button type="submit">Create</form:button><br>
 				</form:form>
 			</div>
 		</div>
