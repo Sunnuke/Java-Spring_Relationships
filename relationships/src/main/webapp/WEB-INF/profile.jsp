@@ -20,9 +20,9 @@
 				<p>Expiration Date: </p>
 			</div>
 			<div class="col">
-				<p>${License.number}</p>
-				<p>${License.state}</p>
-				<p>${License.expirationDate}</p>
+				<p>${person.getLicense().number}</p>
+				<p>${person.getLicense().state}</p>
+				<p>${person.getLicense().expirationDate}</p>
 			</div>
 		</div>
 	</div>

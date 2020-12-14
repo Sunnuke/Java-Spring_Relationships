@@ -16,12 +16,12 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<form:form action="/dashboard" method="post" modelAttribute="license">
+				<form:form action="/License" method="post" modelAttribute="license">
 					<form:select path="person">
-						<c:forEach items="persons" var="person">
+						<c:forEach items="${persons}" var="person">
 							<form:option value="${person.id}">${person.firstName} ${person.lastName}</form:option>
 						</c:forEach>
-					</form:select>
+					</form:select><br>
 					<form:input path="state" placeholder="State"/><br>
 					<br><form:input type="date" path="expirationDate"/><br>
 					<br><br><form:button type="submit">Create</form:button><br>

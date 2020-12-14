@@ -34,6 +34,7 @@ public class PersonService {
 	
 //	CREATE
 	public Person createPerson(Person person) {
+		System.out.println("Id:"+person.getId());
 		return personRepository.save(person);
 		
 	}

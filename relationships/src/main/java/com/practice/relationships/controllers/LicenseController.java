@@ -2,6 +2,8 @@ package com.practice.relationships.controllers;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,18 +26,19 @@ public class LicenseController {
 	
 	// New License
 	@RequestMapping("/licenses/new")
-	public String newLicense(@ModelAttribute("person") License license, Model model) {
+	public String newLicense(@ModelAttribute("license") License license, Model model) {
 		List<Person> persons = personService.allPersons();
 		model.addAttribute("persons", persons);
-	return "/newPer.jsp";
+	return "/newLic.jsp";
 	}
 	
 	// Create Person
 	@RequestMapping(value = "/License", method = RequestMethod.POST)
-	public String newLicense(@ModelAttribute("license") License license, BindingResult result) {
+	public String newLicense(@Valid @ModelAttribute("license") License license, BindingResult result) {
 		if (result.hasErrors()) {
 			return "redirect:/license/new";
 		} else {
+			license.setNumber(String.format("%06d", license.getPerson().getId()));
 			License lic = licenseService.createLicense(license);
 			Long id = lic.getPerson().getId();
 			return "redirect:/persons/" + id;

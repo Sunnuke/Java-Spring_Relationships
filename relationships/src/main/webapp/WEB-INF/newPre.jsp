@@ -16,7 +16,7 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<form:form action="/dashboard" method="post" modelAttribute="person">
+				<form:form action="/Person" method="post" modelAttribute="person">
 					<form:input path="firstName" placeholder="First Name"/><br>
 					<br><form:input path="lastName" placeholder="Last Name"/><br>
 					<br><br><form:button type="submit">Create</form:button><br>
